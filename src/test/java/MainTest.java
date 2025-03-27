@@ -1,3 +1,4 @@
+import org.example.model.Carpet;
 import org.example.model.*;
 import org.example.model.enums.LampType;
 import org.example.model.enums.PaintColor;
@@ -29,7 +30,7 @@ public class MainTest {
     @BeforeEach
     void setUp() {
         lamp = new Lamp(LampType.NORMAL, true, 80);
-        bed = new Bed("Çift Kişilik", 4, 1, 2, 2);
+        bed = new Bed(2, 4, 1, 2, "Modern");
         wardrobe = new Wardrobe(2, 4, 40);
         carpet = new Carpet(3,5, PaintColor.RED);
         ceiling = new Ceiling(3, PaintColor.RED);
